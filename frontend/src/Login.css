@@ -1,0 +1,288 @@
+
+  .login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("references/ChatGPT Image Jul 2, 2026, 12_33_06 PM.png") center center / cover no-repeat;
+  
+}
+
+  .login-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px 36px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+
+  .login-box img {
+    height: 50px;
+    margin-bottom: 12px;
+  }
+
+  .login-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+  }
+
+  .main-box {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .main-box label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .input-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #0f172a;
+    width: 100%;
+  }
+
+  .input-box input::placeholder {
+    color: #94a3b8;
+  }
+
+  .input-box span {
+    font-size: 16px;
+    
+  }
+
+  .forgot-pass {
+    text-align: right;
+    margin-top: 8px;
+  }
+
+  .forgot-pass a {
+    font-size: 13px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .login-btn {
+    width: 100%;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .login-btn:hover { background: #1d4ed8; }
+
+  .or-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  .or-div::before,
+  .or-div::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+  }
+
+  .google-btn {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .google-btn:hover { background: #f8fafc; }
+
+  .signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+  }
+
+  .signup-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+/* ===================================================================================================== */
+.register-page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("references/ChatGPT Image Jul 2, 2026, 12_33_06 PM.png") center center / cover no-repeat;
+}
+.register-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 12px 30px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+
+  .register-card img {
+    height: 45px;
+    margin-bottom: 8px;
+  }
+
+  .register-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+
+  .input-container-box {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .input-container-box label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f172a;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .input-box input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #0f172a;
+    width: 100%;
+  }
+  .input-box input::placeholder { color: #94a3b8; }
+  .input-box i { color: #94a3b8; }
+
+  .register-btn {
+    width: 100%;
+    background: #2563eb;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .register-btn:hover { background: #1d4ed8; }
+  .or-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 5px 0;
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  .or-div::before,
+  .or-div::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+  }
+
+  .google-btn {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .google-btn:hover { background: #f8fafc; }
+
+  .login-text {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #64748b;
+  }
+
+  .login-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 10px;
+  padding: 3px 14px;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.error-message i {
+  font-size: 14px;
+}
