@@ -3,10 +3,10 @@ from flask import Flask,Blueprint,jsonify,request
 import mysql.connector
 
 bcrypt = Bcrypt()
-dashboard_app=Blueprint("dashboard",__name__)
+upload_app=Blueprint("upload",__name__)
 
-@dashboard_app.route("/dashboard",methods=["POST"])
-def dashboard():
+@upload_app.route("/upload",methods=["POST"])
+def upload():
     return jsonify({
         "message":"Dashboard page opened"
     })

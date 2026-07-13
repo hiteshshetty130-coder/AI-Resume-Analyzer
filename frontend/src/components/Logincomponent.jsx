@@ -28,7 +28,7 @@ function Logincomponent() {
         else {
             setError("")
             localStorage.setItem("userEmail", name)
-            navigate("/dashboard");
+            navigate("/upload");
         }
 
 
