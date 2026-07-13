@@ -1,0 +1,31 @@
+import React from 'react'
+
+function UploadDescription() {
+    return (
+        <div>
+            <div className="job-descrption-section">
+                <h3>2. Add Job Description</h3>
+                <p>Paste the job description or upload the job file.</p>
+
+                <div className="job-tabs">
+                    <button className="tab-btn active"><i className="fa-solid fa-pen"></i> Paste Text</button>
+                    <button className="tab-btn"><i className="fa-solid fa-upload"></i> Upload File</button>
+                </div>
+
+                <textarea className="job-textarea" placeholder="Paste the job description here..." id="jobText" oninput="updateCount()"></textarea>
+                <p className="char-count"><span id="count">0</span> / 5000 characters</p>
+            </div>
+
+            <div className="action-buttons">
+                <button className="analyze-btn">
+                    <i className="fa-solid fa-wand-magic-sparkles"></i> Analyze Resume
+                </button>
+                <button className="clear-btn">
+                    <i className="fa-solid fa-trash"></i> Clear All
+                </button>
+            </div>
+        </div>
+    )
+}
+
+export default UploadDescription
