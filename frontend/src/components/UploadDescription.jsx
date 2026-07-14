@@ -1,6 +1,6 @@
 import React from 'react'
 
-function UploadDescription() {
+function UploadDescription({AnalyzeResume}) {
     return (
         <div>
             <div className="job-descrption-section">
@@ -17,7 +17,7 @@ function UploadDescription() {
             </div>
 
             <div className="action-buttons">
-                <button className="analyze-btn">
+                <button className="analyze-btn" onClick={AnalyzeResume}>
                     <i className="fa-solid fa-wand-magic-sparkles"></i> Analyze Resume
                 </button>
                 <button className="clear-btn">
