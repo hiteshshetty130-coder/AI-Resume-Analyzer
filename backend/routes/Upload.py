@@ -4,6 +4,7 @@ import mysql.connector
 import fitz
 from docx import Document
 import pandas as pd
+import re
 
 bcrypt = Bcrypt()
 upload_app=Blueprint("upload",__name__)
@@ -37,16 +38,31 @@ def text_clean(text):
     text=" ".join(text.split())
     return text
 
+def description_clean(text):
+    text=text.lower()
+    text=text.replace("\n"," ")
+    text=" ".join(text.split())
+    return text
+
 
 def csv_reading(csv_file):
     df = pd.read_csv(csv_file)
-   
-    
+    skills=df["Skill"].str.lower().tolist()
+    return skills
+
+def skills_extraction(text,skills):
+    found_skills=[]
+    for skill in skills:
+        pattern=r"\b"+re.escape(skill)+r"\b"
+        if re.search(pattern,text):
+            found_skills.append(skill)
+    return list(set(found_skills))
 
 @upload_app.route("/upload",methods=["POST"])
 def upload():
-    csv_reading(csv_file)
+    skills=csv_reading(csv_file)
     resume=request.files["resume"]
+    description=request.form["description"]
     text=text_extraction(resume)
 
     if text is None:
@@ -55,8 +71,11 @@ def upload():
         }),400
     
     cleaned_text=text_clean(text)
+    description_text=description_clean(description)
+    deteched=skills_extraction(cleaned_text,skills)
+    
     return jsonify({
-        "text": cleaned_text
+        "text": description
     }),200
 
 
