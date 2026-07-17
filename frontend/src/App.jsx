@@ -6,6 +6,7 @@ import UploadNavBar from './components/UploadNavBar';
 import RegisterPage from './pages/RegisterPage';
 import Upload from './pages/Upload';
 import ProtectedRoutes from './components/ProtectedRoutes';
+import Result from './pages/Result';
 function App() {
   
   return (
@@ -18,6 +19,11 @@ function App() {
         <Route path='/upload' element={
           <ProtectedRoutes>
           <Upload/>
+          </ProtectedRoutes>
+          }></Route>
+          <Route path='/result' element={
+            <ProtectedRoutes>
+          <Result/>
           </ProtectedRoutes>
           }></Route>
       </Routes>

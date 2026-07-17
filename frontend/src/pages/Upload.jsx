@@ -17,10 +17,13 @@ function Upload() {
       body: formData
     });
     const data = await response.json();
-    console.log(data);
+    console.log(data.resume_skills);
+    console.log(data.Descrption_skills);
+    console.log(data.missing_skills);
   }
   return (
     <>
+        <UploadNavBar/>
       <div className="main-layout">
         <div className="left-col">
           <UploadResume setResumeFile={setResumeFile} />

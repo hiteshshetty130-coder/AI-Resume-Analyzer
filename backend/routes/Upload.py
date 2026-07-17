@@ -72,10 +72,16 @@ def upload():
     
     cleaned_text=text_clean(text)
     description_text=description_clean(description)
-    deteched=skills_extraction(cleaned_text,skills)
+    
+    resume_skills=skills_extraction(cleaned_text,skills)
+    description_skills=skills_extraction(description_text,skills)
+
+    missing_skills=list(set(description_skills)-set(resume_skills))
     
     return jsonify({
-        "text": description
+        "resume_skills":resume_skills,
+        "Descrption_skills":description_skills,
+        "missing_skills": missing_skills
     }),200
 
 
