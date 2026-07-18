@@ -77,11 +77,17 @@ def upload():
     description_skills=skills_extraction(description_text,skills)
 
     missing_skills=list(set(description_skills)-set(resume_skills))
-    
+
+    matched_skills=list(set(description_skills)&set(resume_skills))
+
+    matched_percentage=round((len(matched_skills)/len(description_skills))*100)if description_skills else 0
+
     return jsonify({
         "resume_skills":resume_skills,
         "Descrption_skills":description_skills,
-        "missing_skills": missing_skills
+        "missing_skills": missing_skills,
+        "matched_skills":matched_skills,
+        "percentage":matched_percentage
     }),200
 
 

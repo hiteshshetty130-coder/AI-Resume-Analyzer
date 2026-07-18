@@ -34,7 +34,16 @@ function AiRecommendations() {
       <div className="ai-body">
 
         <div className="ai-steps">
-          
+          {recommendations.map((item,i)=>(
+            <div className="ai-step" key={i}>
+                <div className="step-num">{i+1}</div>
+                <div className="step-content">
+                  <h4>{item.title}</h4>
+                  <p>{item.desc}</p>
+                </div>
+                <a href="#" className='view-link'>View Resources --</a>
+            </div>
+          ))}  
         </div>
 
         <div className="ai-image">

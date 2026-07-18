@@ -1,6 +1,7 @@
 import React from "react";
 
-function SkillsGrid() {
+
+function SkillsGrid({result}) {
   const resumeSkills = [
     "Python",
     "Flask",
@@ -36,6 +37,7 @@ function SkillsGrid() {
   const matchedSkills = ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQL"];
 
   const missingSkills = ["React"];
+  
 
   return (
     <div className="skills-grid">
@@ -43,12 +45,12 @@ function SkillsGrid() {
       <div className="skill-box">
         <div className="skill-box-header">
           <span className="skill-box-title">
-            🟢 Resume Skills ({resumeSkills.length})
+            🟢 Resume Skills ({result.resume_skills.length})
           </span>
         </div>
         <p className="skill-box-sub">Skills found in your resume</p>
         <div className="tags-wrap">
-          {resumeSkills.map((skill, i) => (
+          {result.resume_skills.map((skill, i) => (
             <span key={i} className="tag green-tag">
               {skill}
             </span>
@@ -60,12 +62,12 @@ function SkillsGrid() {
       <div className="skill-box">
         <div className="skill-box-header">
           <span className="skill-box-title">
-            🔵 Job Description Skills ({jdSkills.length})
+            🔵 Job Description Skills ({result.Descrption_skills.length})
           </span>
         </div>
         <p className="skill-box-sub">Skills required in the job description</p>
         <div className="tags-wrap">
-          {jdSkills.map((skill, i) => (
+          {result.Descrption_skills.map((skill, i) => (
             <span key={i} className="tag blue-tag">
               {skill}
             </span>
@@ -77,12 +79,12 @@ function SkillsGrid() {
       <div className="skill-box">
         <div className="skill-box-header">
           <span className="skill-box-title">
-            ✅ Matched Skills ({matchedSkills.length})
+            ✅ Matched Skills ({result.matched_skills.length})
           </span>
         </div>
         <p className="skill-box-sub">Skills you have that match the job</p>
         <div className="tags-wrap">
-          {matchedSkills.map((skill, i) => (
+          {result.matched_skills.map((skill, i) => (
             <span key={i} className="tag green-tag">
               {skill}
             </span>
@@ -97,12 +99,12 @@ function SkillsGrid() {
       <div className="skill-box">
         <div className="skill-box-header">
           <span className="skill-box-title">
-            ❌ Missing Skills ({missingSkills.length})
+            ❌ Missing Skills ({result.missing_skills.length})
           </span>
         </div>
         <p className="skill-box-sub">Skills you need to learn/improve</p>
         <div className="tags-wrap">
-          {missingSkills.map((skill, i) => (
+          {result.missing_skills.map((skill, i) => (
             <span key={i} className="tag red-tag">
               {skill}
             </span>

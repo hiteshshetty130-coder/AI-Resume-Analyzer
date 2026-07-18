@@ -5,7 +5,7 @@ function ResultHeader() {
   return (
     <div className="result-header">
       <Link to="/upload" className="back-link">
-        ← Back to Dashboard
+        ← Back to Upload Section
       </Link>
 
       <div className="result-title">
