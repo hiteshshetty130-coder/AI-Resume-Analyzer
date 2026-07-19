@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function ResultHeader() {
+  const navigate=useNavigate();
+  const handleAnalyzeBtn=()=>{
+      navigate("/upload")
+  }
   return (
     <div className="result-header">
       <Link to="/upload" className="back-link">
@@ -13,7 +18,7 @@ function ResultHeader() {
         <p>Here's how your resume matches the job description</p>
       </div>
 
-      <button className="analyze-btn-result">🔄 Analyze Another</button>
+      <button className="analyze-btn-result" onClick={handleAnalyzeBtn}>🔄 Analyze Another</button>
     </div>
   );
 }
