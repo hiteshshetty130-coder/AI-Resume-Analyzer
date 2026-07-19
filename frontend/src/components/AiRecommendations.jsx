@@ -1,25 +1,6 @@
 import React from 'react'
 
 function AiRecommendations() {
-  const recommendations = [
-    {
-      title: "Learn React Fundamentals",
-      desc: "React is a popular JavaScript library for building user interfaces."
-    },
-    {
-      title: "Build a React Project",
-      desc: "Practice by building a real-world project to strengthen your skills."
-    },
-    {
-      title: "Understand Component Lifecycle & Hooks",
-      desc: "Master React Hooks like useState, useEffect, useContext."
-    },
-    {
-      title: "Explore Advanced Topics",
-      desc: "Learn about React Router, State Management (Redux), and more."
-    }
-  ]
-
   return (
     <div className="ai-section">
 
