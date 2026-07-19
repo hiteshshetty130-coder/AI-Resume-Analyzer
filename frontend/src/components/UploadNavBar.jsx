@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export default function UploadNavBar() {
   return (
@@ -10,20 +11,16 @@ export default function UploadNavBar() {
 
       <ul className="upload-nav-links">
         <li>
-          <a href="#" className="active">
+          <NavLink to="/upload" className={({isActive})=>(isActive?"active":"")}>
             <i className="fa-solid fa-cloud-arrow-up"></i> Upload Resume
-          </a>
+          </NavLink>
         </li>
        
+        
         <li>
-          <a href="#">
-            <i className="fa-solid fa-chart-bar"></i> Analysis Results
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          <NavLink to="#" className={({isActive})=>(isActive?"":"")}>
             <i className="fa-solid fa-lightbulb"></i> Market Insights
-          </a>
+          </NavLink>
         </li>
       </ul>
 
