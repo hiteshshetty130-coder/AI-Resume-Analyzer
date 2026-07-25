@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function UploadResume({setResumeFile}) {
+function UploadResume({resumeFile,setResumeFile,icon,iconclass}) {
   
   return (
     <div>
@@ -41,20 +41,22 @@ function UploadResume({setResumeFile}) {
             Supported formats: PDF, DOCX, TXT &nbsp;•&nbsp; Max size: 10MB
           </p>
         </div>
+        {resumeFile && (
         <div className="file-preview">
           <div className="file-preview-left">
-            <div className="file-icon">
-              <i className="fa-solid fa-file-pdf"></i>
+            <div className={`file-icon ${iconclass}`} >
+              {icon}
             </div>
             <div className="file-info">
-              <h5>Arjun_Sharma_Resume.pdf</h5>
-              <span>245 KB</span>
+              <h5>{resumeFile?.name}</h5>
+              <span>{(resumeFile?.size/1024).toFixed(1)}KB</span>
             </div>
           </div>
           <div className="file-check">
             <i className="fa-solid fa-circle-check"></i>
           </div>
         </div>
+        )}
       </div>
     </div>
   );

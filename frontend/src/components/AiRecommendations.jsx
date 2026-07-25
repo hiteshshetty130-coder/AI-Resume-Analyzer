@@ -1,8 +1,6 @@
 import React from 'react'
 
 function AiRecommendations() {
-  
-
   return (
     <div className="ai-section">
 

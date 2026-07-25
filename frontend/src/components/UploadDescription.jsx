@@ -1,6 +1,6 @@
 import React from "react";
 
-function UploadDescription({ AnalyzeResume ,  setDescriptionText }) {
+function UploadDescription({ AnalyzeResume ,  setDescriptionText, DescriptionText, handleClear }) {
   return (
     <div>
       <div className="job-descrption-section">
@@ -20,6 +20,7 @@ function UploadDescription({ AnalyzeResume ,  setDescriptionText }) {
           className="job-textarea"
           placeholder="Paste the job description here..."
           id="jobText"
+          value={DescriptionText}
           oninput="updateCount()"
           onChange={(e) => setDescriptionText(e.target.value)}
         ></textarea>
@@ -32,7 +33,7 @@ function UploadDescription({ AnalyzeResume ,  setDescriptionText }) {
         <button className="analyze-btn" onClick={AnalyzeResume}>
           <i className="fa-solid fa-wand-magic-sparkles"></i> Analyze Resume
         </button>
-        <button className="clear-btn">
+        <button className="clear-btn" onClick={handleClear}>
           <i className="fa-solid fa-trash"></i> Clear All
         </button>
       </div>

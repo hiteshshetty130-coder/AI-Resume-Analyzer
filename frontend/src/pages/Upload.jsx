@@ -5,11 +5,32 @@ import UploadResume from "../components/UploadResume";
 import UploadDescription from "../components/UploadDescription";
 import UploadRightContent from "../components/UploadRightContent";
 import "../upload.css";
+import {FaFileAlt, FaFilePdf, FaFileWord} from "react-icons/fa"
+
+
+
 function Upload() {
   const [resumeFile, setResumeFile] = useState(null);
   const [DescriptionText, setDescriptionText] = useState("");
   const navigate = useNavigate();
+  const handleClear=()=>{
+    setResumeFile(null);
+    setDescriptionText("");
+  }
 
+  const filename=resumeFile?.name?.toLowerCase()||"";
+  let icon=<FaFilePdf />;
+  let bgColor="#fee2e2"
+  let iconclass="pdf-icon"
+  if(filename.endsWith(".txt")){
+    icon=<FaFileAlt />;
+    iconclass="txt-icon"
+    
+  }
+  else if(filename.endsWith(".docx")){
+    icon=<FaFileWord />;
+    iconclass="doc-icon"
+  }
   const AnalyzeResume = async () => {
     const formData = new FormData();
     formData.append("resume", resumeFile);
@@ -32,10 +53,13 @@ function Upload() {
       <UploadNavBar />
       <div className="main-layout">
         <div className="left-col">
-          <UploadResume setResumeFile={setResumeFile} />
+          <UploadResume resumeFile={resumeFile} setResumeFile={setResumeFile} icon={icon} iconclass={iconclass}/>
           <UploadDescription
             AnalyzeResume={AnalyzeResume}
             setDescriptionText={setDescriptionText}
+            DescriptionText={DescriptionText}
+            handleClear={handleClear}
+            
           />
         </div>
         <div className="right-col">

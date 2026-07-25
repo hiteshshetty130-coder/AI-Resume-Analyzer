@@ -228,12 +228,10 @@
   .file-icon {
     width: 36px;
     height: 36px;
-    background: #fee2e2;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ef4444;
     font-size: 16px;
   }
 
@@ -477,3 +475,18 @@
     color: #2563eb;
     flex-shrink: 0;
   }
+
+/* ============================================================================================================== */
+.pdf-icon{
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.doc-icon{
+  background: #dbeafe;
+  color: #2563eb;
+}
+.txt-icon{
+  background: #f3f4f6;
+  color: #4b5563;
+}
