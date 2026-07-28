@@ -1,6 +1,6 @@
 import React from "react";
 
-function UploadDescription({ AnalyzeResume ,  setDescriptionText, DescriptionText, handleClear }) {
+function UploadDescription({ AnalyzeResume ,  setDescriptionText, DescriptionText, handleClear,err }) {
   return (
     <div>
       <div className="job-descrption-section">
@@ -23,11 +23,14 @@ function UploadDescription({ AnalyzeResume ,  setDescriptionText, DescriptionTex
           value={DescriptionText}
           oninput="updateCount()"
           onChange={(e) => setDescriptionText(e.target.value)}
+          maxLength={5000}
         ></textarea>
         <p className="char-count">
-          <span id="count">0</span> / 5000 characters
+          <span id="count">{DescriptionText.length}</span> / 5000 characters
         </p>
       </div>
+      {err &&
+      <p className="error-mess"><i className="fa-solid fa-circle-exclamation"></i>{err}</p>}
 
       <div className="action-buttons">
         <button className="analyze-btn" onClick={AnalyzeResume}>

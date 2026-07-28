@@ -329,7 +329,7 @@
   .action-buttons {
     display: flex;
     gap: 14px;
-    margin: 24px 28px;
+    margin: 15px 28px;
   }
 
   .analyze-btn {
@@ -489,4 +489,20 @@
 .txt-icon{
   background: #f3f4f6;
   color: #4b5563;
+}
+
+.error-mess{
+  margin:10px 24px;
+  padding:10px 24px ;
+  text-align: center;
+  border-radius:8px ;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.error-mess i{
+  margin-right: 5px;
 }

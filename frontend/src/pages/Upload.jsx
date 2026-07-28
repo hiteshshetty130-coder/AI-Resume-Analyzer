@@ -12,6 +12,7 @@ import {FaFileAlt, FaFilePdf, FaFileWord} from "react-icons/fa"
 function Upload() {
   const [resumeFile, setResumeFile] = useState(null);
   const [DescriptionText, setDescriptionText] = useState("");
+  const [err,setErr]=useState("")
   const navigate = useNavigate();
   const handleClear=()=>{
     setResumeFile(null);
@@ -32,6 +33,21 @@ function Upload() {
     iconclass="doc-icon"
   }
   const AnalyzeResume = async () => {
+    if (!resumeFile  && !DescriptionText.trim()){
+      setErr("Please Upload Both....")
+      return;
+    }
+    else if(!resumeFile){
+      setErr("Please Upload Your Resume");
+      return;
+    }
+    else if (!DescriptionText.trim()){
+      setErr("Please Paste Your Description Text");
+      return;
+    }
+    else{
+      setErr("")
+    }
     const formData = new FormData();
     formData.append("resume", resumeFile);
     formData.append("description", DescriptionText);
@@ -59,6 +75,7 @@ function Upload() {
             setDescriptionText={setDescriptionText}
             DescriptionText={DescriptionText}
             handleClear={handleClear}
+            err={err}
             
           />
         </div>
