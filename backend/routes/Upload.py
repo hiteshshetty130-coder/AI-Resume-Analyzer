@@ -60,40 +60,50 @@ def skills_extraction(text,skills):
 
 @upload_app.route("/upload",methods=["POST"])
 def upload():
-    skills=csv_reading(csv_file)
-    resume=request.files["resume"]
-    description=request.form["description"]
-    text=text_extraction(resume)
+    skills = csv_reading(csv_file)
+
+    resume = request.files["resume"]
+    description = request.form.get("description", "").strip()
+    description_file = request.files.get("jdFile")
+
+    text = text_extraction(resume)
 
     if text is None:
         return jsonify({
-            "message": "Unsupported File Type"
-        }),400
-    
-    cleaned_text=text_clean(text)
-    description_text=description_clean(description)
-    
-    resume_skills=skills_extraction(cleaned_text,skills)
-    description_skills=skills_extraction(description_text,skills)
+            "message": "Unsupported Resume File Type"
+        }), 400
 
-    missing_skills=list(set(description_skills)-set(resume_skills))
+    cleaned_text = text_clean(text)
+    resume_skills = skills_extraction(cleaned_text, skills)
 
-    matched_skills=list(set(description_skills)&set(resume_skills))
+    # If JD file is uploaded, use it
+    if description_file and description_file.filename != "":
+        jd_text = text_extraction(description_file)
 
-    matched_percentage=round((len(matched_skills)/len(description_skills))*100)if description_skills else 0
+        if jd_text is None:
+            return jsonify({
+                "message": "Unsupported Job Description File Type"
+            }), 400
+
+        description_cleaned = description_clean(jd_text)
+
+    # Otherwise use pasted text
+    else:
+        description_cleaned = description_clean(description)
+
+    description_skills = skills_extraction(description_cleaned, skills)
+
+    missing_skills = list(set(description_skills) - set(resume_skills))
+    matched_skills = list(set(description_skills) & set(resume_skills))
+    matched_percentage = (
+        round((len(matched_skills) / len(description_skills)) * 100)
+        if description_skills else 0
+    )
 
     return jsonify({
-        "resume_skills":resume_skills,
-        "Descrption_skills":description_skills,
+        "resume_skills": resume_skills,
+        "description_skills": description_skills,
         "missing_skills": missing_skills,
-        "matched_skills":matched_skills,
-        "percentage":matched_percentage
-    }),200
-
-
-    
-
-
-
-
-
+        "matched_skills": matched_skills,
+        "percentage": matched_percentage
+    }), 200

@@ -62,12 +62,12 @@ function SkillsGrid({result}) {
       <div className="skill-box">
         <div className="skill-box-header">
           <span className="skill-box-title">
-            🔵 Job Description Skills ({result.Descrption_skills.length})
+            🔵 Job Description Skills ({result.description_skills.length})
           </span>
         </div>
         <p className="skill-box-sub">Skills required in the job description</p>
         <div className="tags-wrap">
-          {result.Descrption_skills.map((skill, i) => (
+          {result.description_skills.map((skill, i) => (
             <span key={i} className="tag blue-tag">
               {skill}
             </span>

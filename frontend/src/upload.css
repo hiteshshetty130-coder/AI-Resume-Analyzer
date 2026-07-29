@@ -506,3 +506,141 @@
 .error-mess i{
   margin-right: 5px;
 }
+
+
+/* ============================================================================================================ */
+.jd-upload-box {
+    border: 2px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #fafbff;
+    transition: 0.3s ease;
+}
+
+.jd-upload-box:hover {
+    border-color: #2563eb;
+    background: #f5f8ff;
+}
+
+.jd-upload-box label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 42px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.jd-upload-box h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.browse-btn:hover {
+    background: #1d4ed8;
+}
+
+.jd-upload-box p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.file-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+    margin-top: 20px;
+}
+
+.file-preview-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-info h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+
+
+.success-icon {
+    color: #22c55e;
+    font-size: 24px;
+}
+.file-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.pdf {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.docx {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.txt {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.jd-upload-label{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:220px;
+    cursor:pointer;
+    gap:12px;
+}
+
+.upload-icon{
+    font-size:40px;
+    color:#2563eb;
+}
+
+.jd-upload-label h4{
+    margin:0;
+    font-size:22px;
+    font-weight:600;
+}
+
+.jd-upload-label p{
+    margin:0;
+    color:#777;
+}
+
+.browse-btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.jd-upload-label small{
+    color:#666;
+}

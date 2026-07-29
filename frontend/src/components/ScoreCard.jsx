@@ -11,7 +11,7 @@ function ScoreCard({result}) {
 
         <div className="score-text">
           <h3>🎉 Great Match!</h3>
-          <p>You have matched {result.matched_skills.length} out of {result.Descrption_skills.length} required skills.</p>
+          <p>You have matched {result.matched_skills.length} out of {result.description_skills.length} required skills.</p>
         </div>
       </div>
 
@@ -24,7 +24,7 @@ function ScoreCard({result}) {
         </div>
         <div className="stat-box">
           <span>💼</span>
-          <h2>{result.Descrption_skills.length}</h2>
+          <h2>{result.description_skills.length}</h2>
           <p>JD Skills</p>
           <small>Required by job</small>
         </div>
