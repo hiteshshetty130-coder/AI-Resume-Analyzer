@@ -119,6 +119,8 @@
     color: #2563eb;
     font-size: 20px;
   }
+  
+  
 
   .upload-page-header-text h2 {
     font-size: 22px;
@@ -160,6 +162,11 @@
     text-align: center;
     background: #f8faff;
     cursor: pointer;
+  }
+
+  .drop-browse-zone.drag-active{
+    border: 2px dashed #2563eb;
+    background-color: #eef5ff;
   }
 
   .dropzone-icon {
@@ -517,6 +524,10 @@
     background: #fafbff;
     transition: 0.3s ease;
 }
+.jd-upload-box.drag-active{
+    border: 2px dashed #2563eb;
+    background-color: #eef5ff;
+  }
 
 .jd-upload-box:hover {
     border-color: #2563eb;

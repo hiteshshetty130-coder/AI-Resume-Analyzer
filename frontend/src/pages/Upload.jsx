@@ -12,6 +12,7 @@ function Upload() {
   const [DescriptionText, setDescriptionText] = useState("");
   const [err, setErr] = useState("");
   const [jdFile, setJDFile] = useState(null);
+  
   const navigate = useNavigate();
   const handleClear = () => {
     setResumeFile(null);
@@ -90,6 +91,7 @@ function Upload() {
             setResumeFile={setResumeFile}
             icon={icon}
             iconclass={iconclass}
+            
           />
           <UploadDescription
             AnalyzeResume={AnalyzeResume}

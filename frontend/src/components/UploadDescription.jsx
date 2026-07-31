@@ -15,6 +15,26 @@ function UploadDescription({
   const handleJDFile = (e) => {
     setJDFile(e.target.files[0]);
   };
+
+  const[isDragging,setIsDragging]=useState(false);
+
+  const handleDragover=(e)=>{
+    e.preventDefault();
+    setIsDragging(true);
+  }
+  const handleDragLeave=(e)=>{
+    setIsDragging(false);
+  }
+  const handleDrop=(e)=>{
+    e.preventDefault();
+    setIsDragging(false);
+    const file=e.dataTransfer.files[0];
+    if (file){
+      setJDFile(file);
+    }
+  }
+
+
   return (
     <div>
       <div className="job-descrption-section">
@@ -63,7 +83,7 @@ function UploadDescription({
             <i className="fa-solid fa-circle-check success-icon"></i>
           </div>
         ) : (
-          <div className="jd-upload-box">
+          <div className={`jd-upload-box ${isDragging ? "drag-active" : ""}`} onDragOver={handleDragover} onDragLeave={handleDragLeave} onDrop={handleDrop}>
             <input
               type="file"
               id="jdFile"

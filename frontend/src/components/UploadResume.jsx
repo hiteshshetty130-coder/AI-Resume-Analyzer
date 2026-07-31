@@ -1,7 +1,25 @@
 import React, { useState } from "react";
+import "../upload.css";
 
 function UploadResume({resumeFile,setResumeFile,icon,iconclass}) {
-  
+  const [isDragging,setIsDragging]=useState(false);
+  const handleDragOver=(e)=>{
+    e.preventDefault();
+    setIsDragging(true)
+  } 
+  const handleDragLeave=()=>{
+    setIsDragging(false)
+  }
+  const handleDrop=(e)=>{
+    e.preventDefault();
+    setIsDragging(false)
+    const file=e.dataTransfer.files[0];
+    if (file){
+      setResumeFile(file);
+    }
+  }
+
+
   return (
     <div>
       <div className="upload-page-header">
@@ -18,7 +36,7 @@ function UploadResume({resumeFile,setResumeFile,icon,iconclass}) {
         <h3>1. Upload Your Resume</h3>
         <p>Upload your latest resume in PDF, DOCX, or TXT format.</p>
 
-        <div className="drop-browse-zone">
+        <div className={`drop-browse-zone ${isDragging ? "drag-active" : ""}`} onDragOver={handleDragOver} onDragLeave={handleDragLeave} onDrop={handleDrop}>
           <div className="dropzone-icon">
             <i className="fa-solid fa-cloud-arrow-up"></i>
           </div>
