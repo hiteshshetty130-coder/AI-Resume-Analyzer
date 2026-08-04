@@ -11,9 +11,12 @@ bcrypt=Bcrypt(app)
 from routes.Register import register_app
 from routes.login import login_app
 from routes.Upload import upload_app
+
+
 app.register_blueprint(register_app)
 app.register_blueprint(login_app)
 app.register_blueprint(upload_app)
+
 
 
 

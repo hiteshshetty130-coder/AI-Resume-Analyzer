@@ -5,10 +5,13 @@ import fitz
 from docx import Document
 import pandas as pd
 import re
+from google import genai
+from routes.ai import aiRecom 
+
 
 bcrypt = Bcrypt()
 upload_app=Blueprint("upload",__name__)
-csv_file="backend/data/skills_en.csv"
+csv_file="data/skills_en.csv"
 
 def text_extraction(resume):
     filename=resume.filename.lower()
@@ -58,6 +61,8 @@ def skills_extraction(text,skills):
             found_skills.append(skill)
     return list(set(found_skills))
 
+
+
 @upload_app.route("/upload",methods=["POST"])
 def upload():
     skills = csv_reading(csv_file)
@@ -100,7 +105,13 @@ def upload():
         if description_skills else 0
     )
 
+    #ai-Recommendation file
+    main_skills=aiRecom(missing_skills)
+    recom=[line.strip() for line in main_skills.text.split("\n") if line.strip()]
+    
+
     return jsonify({
+        "main_skills":recom,
         "resume_skills": resume_skills,
         "description_skills": description_skills,
         "missing_skills": missing_skills,

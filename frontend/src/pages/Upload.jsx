@@ -72,7 +72,7 @@ function Upload() {
       body: formData,
     });
     const data = await response.json();
-
+  
     navigate("/result", {
       state: {
         result: data,

@@ -11,7 +11,7 @@ import { useLocation } from "react-router-dom";
 function Result() {
   const location=useLocation();
     const result=location.state?.result
-    console.log(result)
+    
   return (
 
     <>
@@ -19,7 +19,7 @@ function Result() {
     <ResultHeader/>
     <ScoreCard result={result}/>
     <SkillsGrid result={result}/>
-    <AiRecommendations/>
+    <AiRecommendations result={result}/>
     </>
   )
 }
