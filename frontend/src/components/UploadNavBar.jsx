@@ -2,6 +2,8 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 
 export default function UploadNavBar() {
+  const user=localStorage.getItem("userName");
+  const initial=user ? user[0].toUpperCase() : "U";
   return (
     <nav className="upload-navbar">
       <div className="upload-nav-logo">
@@ -25,11 +27,7 @@ export default function UploadNavBar() {
       </ul>
 
       <div className="upload-nav-action">
-        <div className="upload-nav-bell">
-          <i className="fa-regular fa-bell"></i>
-          <span className="dot"></span>
-        </div>
-        <div className="upload-nav-profile">A</div>
+        <div className="upload-nav-profile">{initial}</div>
       </div>
     </nav>
   );

@@ -24,6 +24,7 @@ def login():
     if not bcrypt.check_password_hash(users[3],password):
         return jsonify({"message":"Invalid password"}),401
     
-    return jsonify({"message":"user found"}),200
+    return jsonify({"message":"user found",
+                    "name":users[1]}),200
 
     

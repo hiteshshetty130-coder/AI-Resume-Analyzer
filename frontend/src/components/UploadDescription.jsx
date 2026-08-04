@@ -96,7 +96,7 @@ function UploadDescription({
               <i className="fa-solid fa-cloud-arrow-up upload-icon"></i>
               <h4>Drag & Drop your Job Description here</h4>
               <p>or</p>
-              <span className="browse-btn">Browse Files</span>
+              <span className="jd-browse-btn">Browse Files</span>
               <small>Supported formats: PDF, DOCX, TXT</small>
             </label>
           </div>

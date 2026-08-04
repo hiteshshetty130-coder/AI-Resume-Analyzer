@@ -22,16 +22,16 @@ function Logincomponent() {
             }),
         });
         const data = await response.json();
+        console.log(data);
         if (!response.ok) {
             setError(data.message)
         }
         else {
             setError("")
             localStorage.setItem("userEmail", name)
+            localStorage.setItem("userName",data.name)
             navigate("/upload");
         }
-
-
     };
     return (
         <div className="login-page">

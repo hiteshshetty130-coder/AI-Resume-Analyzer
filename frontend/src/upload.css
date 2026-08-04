@@ -212,7 +212,7 @@
   .dropzone-formats {
     font-size: 12px;
     color: #94a3b8;
-    margin-top: 14px;
+    margin-top: 30px;
   }
 
   .file-preview {
@@ -644,7 +644,7 @@
     color:#777;
 }
 
-.browse-btn{
+.jd-browse-btn{
     background:#2563eb;
     color:white;
     padding:12px 24px;
