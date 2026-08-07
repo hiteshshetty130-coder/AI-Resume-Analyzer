@@ -1,9 +1,20 @@
-import React from "react";
-import {NavLink} from "react-router-dom";
+import React, { useState } from "react";
+import {NavLink, useNavigate} from "react-router-dom";
+import Dropdown from "./Dropdown";
+import "../dropdown.css";
 
 export default function UploadNavBar() {
   const user=localStorage.getItem("userName");
+  const email=localStorage.getItem("userEmail");
   const initial=user ? user[0].toUpperCase() : "U";
+  const [showdrop,setshowdrop]=useState(false);
+  const navigate=useNavigate();
+  const handlelogout=()=>{
+    localStorage.clear();
+    navigate("/login");
+  }
+
+
   return (
     <nav className="upload-navbar">
       <div className="upload-nav-logo">
@@ -26,8 +37,9 @@ export default function UploadNavBar() {
         </li>
       </ul>
 
-      <div className="upload-nav-action">
-        <div className="upload-nav-profile">{initial}</div>
+      <div className="upload-nav-action profile-container">
+        <div className="upload-nav-profile" onClick={()=>setshowdrop(!showdrop)}>{initial}</div>
+        {showdrop && (<Dropdown email={email} onLogout={handlelogout}/>)}
       </div>
     </nav>
   );

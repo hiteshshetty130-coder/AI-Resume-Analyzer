@@ -63,7 +63,7 @@ function UploadDescription({
               placeholder="Paste the job description here..."
               id="jobText"
               value={DescriptionText}
-              oninput="updateCount()"
+              onInput="updateCount()"
               onChange={(e) => setDescriptionText(e.target.value)}
               maxLength={5000}
             ></textarea>

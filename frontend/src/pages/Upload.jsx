@@ -4,6 +4,7 @@ import UploadNavBar from "../components/UploadNavBar";
 import UploadResume from "../components/UploadResume";
 import UploadDescription from "../components/UploadDescription";
 import UploadRightContent from "../components/UploadRightContent";
+import Dropdown from "../components/Dropdown";
 import "../upload.css";
 import { FaFileAlt, FaFilePdf, FaFileWord } from "react-icons/fa";
 
@@ -12,6 +13,7 @@ function Upload() {
   const [DescriptionText, setDescriptionText] = useState("");
   const [err, setErr] = useState("");
   const [jdFile, setJDFile] = useState(null);
+  
   
   const navigate = useNavigate();
   const handleClear = () => {
@@ -84,6 +86,7 @@ function Upload() {
   return (
     <>
       <UploadNavBar />
+      
       <div className="main-layout">
         <div className="left-col">
           <UploadResume
