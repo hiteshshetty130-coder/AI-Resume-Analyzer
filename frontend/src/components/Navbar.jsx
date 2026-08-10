@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({handlenav}) {
+
   return (
     <nav className="nav-bar">
   <div className="logo-img">
@@ -9,7 +10,7 @@ function Navbar() {
   </div>
  
   <ul className="nav-link">
-    <li><Link to="/">Upload</Link></li>
+    <li><Link to={handlenav()}>Upload</Link></li>
     <li><Link to="/">Market Analysis</Link></li>
     <li><Link to="/">About</Link></li>
   </ul>

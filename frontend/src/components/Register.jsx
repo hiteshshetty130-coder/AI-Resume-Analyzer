@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 
 function Register() {
     const [name, setName] = useState("")
@@ -7,6 +7,7 @@ function Register() {
     const [password, setPassword] = useState("")
     const [confirmpassword, setCoPassword] = useState("")
     const [error, setError] = useState("")
+    const navigate=useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -31,6 +32,9 @@ function Register() {
         const data = await response.json();
         if(!response.ok){
             setError(data.message);
+        }
+        else{
+            navigate("/login");
         }
         console.log(data.message)
     }
