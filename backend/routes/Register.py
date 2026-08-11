@@ -3,6 +3,7 @@ from flask_bcrypt import Bcrypt
 from database.database import *
 from flask_bcrypt import Bcrypt
 import mysql.connector
+import logging
 
 bcrypt = Bcrypt()
 register_app=Blueprint("register",__name__)
@@ -19,12 +20,14 @@ def register():
     cursor.execute("SELECT * FROM users WHERE email=%s",(email,))
     user=cursor.fetchone()
     if user:
+        logging.warning("User Already Exists")
         return jsonify({"message":"Email Already Exists!"}),400
     conn.close()
     
     hashed_password=bcrypt.generate_password_hash(password).decode("utf-8")
     registeruser(name,email,hashed_password)
 
+    logging.info("User Registered Sucessfully")
     return jsonify({
         "message":"User Registration sucessfully"
     })

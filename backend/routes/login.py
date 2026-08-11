@@ -3,6 +3,7 @@ from flask_bcrypt import Bcrypt
 from database.database import *
 from flask_bcrypt import Bcrypt
 import mysql.connector
+import logging
 
 bcrypt = Bcrypt()
 login_app=Blueprint("login",__name__)
@@ -19,11 +20,14 @@ def login():
     users=cursor.fetchone()
 
     if not users:
+        logging.warning("User Not Found")
         return jsonify({"message":"User not found"}),404
     
     if not bcrypt.check_password_hash(users[3],password):
+        logging.warning("Invalid password Entered")
         return jsonify({"message":"Invalid password"}),401
-    
+
+    logging.info("Login Successful")
     return jsonify({"message":"user found",
                     "name":users[1]}),200
 

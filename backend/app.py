@@ -2,11 +2,14 @@ from flask import Flask,request,jsonify
 from flask_cors import CORS
 from flask_bcrypt import Bcrypt
 from database.database import *
+import logging
 
 
 app=Flask(__name__)
 CORS(app)
 bcrypt=Bcrypt(app)
+
+logging.basicConfig(filename="app.log",level=logging.INFO,format="%(asctime)s- %(levelname)s-%(message)s")
 
 from routes.Register import register_app
 from routes.login import login_app

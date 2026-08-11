@@ -7,6 +7,7 @@ import pandas as pd
 import re
 from google import genai
 from routes.ai import aiRecom 
+import logging
 
 
 bcrypt = Bcrypt()
@@ -66,24 +67,29 @@ def skills_extraction(text,skills):
 @upload_app.route("/upload",methods=["POST"])
 def upload():
     skills = csv_reading(csv_file)
-
     resume = request.files["resume"]
     description = request.form.get("description", "").strip()
     description_file = request.files.get("jdFile")
 
     text = text_extraction(resume)
+    logging.info("text extracted from resume")
 
     if text is None:
+        logging.warning("Unsupported Resume file Type!!!")
         return jsonify({
             "message": "Unsupported Resume File Type"
         }), 400
 
     cleaned_text = text_clean(text)
+    logging.info("text Cleaned")
+
     resume_skills = skills_extraction(cleaned_text, skills)
+    logging.info("Extracted Skills from the Resume")
 
     # If JD file is uploaded, use it
     if description_file and description_file.filename != "":
         jd_text = text_extraction(description_file)
+        logging.info("text extracted from Description file")
 
         if jd_text is None:
             return jsonify({
@@ -91,12 +97,16 @@ def upload():
             }), 400
 
         description_cleaned = description_clean(jd_text)
+        logging.info("text Cleaned from description file")
 
     # Otherwise use pasted text
     else:
         description_cleaned = description_clean(description)
+        logging.info("text Cleaned from description text")
+
 
     description_skills = skills_extraction(description_cleaned, skills)
+    logging.info("Skill Extracted from the description file or text")
 
     missing_skills = list(set(description_skills) - set(resume_skills))
     matched_skills = list(set(description_skills) & set(resume_skills))
@@ -108,8 +118,7 @@ def upload():
     #ai-Recommendation file
     main_skills=aiRecom(missing_skills)
     recom=[line.strip() for line in main_skills.text.split("\n") if line.strip()]
-    
-
+    logging.info("===================All Required Text Extracted and found===================")
     return jsonify({
         "main_skills":recom,
         "resume_skills": resume_skills,

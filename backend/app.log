@@ -1,0 +1,45 @@
+2026-08-11 14:30:31,742- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-11 14:30:31,744- INFO-[33mPress CTRL+C to quit[0m
+2026-08-11 14:30:31,780- INFO- * Restarting with stat
+2026-08-11 14:31:23,126- WARNING- * Debugger is active!
+2026-08-11 14:31:23,130- INFO- * Debugger PIN: 704-284-213
+2026-08-11 14:31:36,450- INFO-127.0.0.1 - - [11/Aug/2026 14:31:36] "OPTIONS /login HTTP/1.1" 200 -
+2026-08-11 14:31:36,452- INFO-127.0.0.1 - - [11/Aug/2026 14:31:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-11 14:31:36,454- INFO-127.0.0.1 - - [11/Aug/2026 14:31:36] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-11 14:31:36,629- INFO-127.0.0.1 - - [11/Aug/2026 14:31:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-11 14:31:37,043- INFO-127.0.0.1 - - [11/Aug/2026 14:31:37] "[33mPOST /login HTTP/1.1[0m" 404 -
+2026-08-11 14:31:55,022- INFO-127.0.0.1 - - [11/Aug/2026 14:31:55] "OPTIONS /login HTTP/1.1" 200 -
+2026-08-11 14:31:55,170- INFO-127.0.0.1 - - [11/Aug/2026 14:31:55] "[33mPOST /login HTTP/1.1[0m" 404 -
+2026-08-11 14:32:19,293- INFO-127.0.0.1 - - [11/Aug/2026 14:32:19] "OPTIONS /login HTTP/1.1" 200 -
+2026-08-11 14:32:19,992- INFO-Login Successful
+2026-08-11 14:32:20,002- INFO-127.0.0.1 - - [11/Aug/2026 14:32:20] "POST /login HTTP/1.1" 200 -
+2026-08-11 14:50:11,389- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-08-11 14:50:11,390- INFO-[33mPress CTRL+C to quit[0m
+2026-08-11 14:50:11,417- INFO- * Restarting with stat
+2026-08-11 14:50:44,637- WARNING- * Debugger is active!
+2026-08-11 14:50:44,643- INFO- * Debugger PIN: 704-284-213
+2026-08-11 14:51:06,671- INFO-127.0.0.1 - - [11/Aug/2026 14:51:06] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-11 14:51:50,931- INFO-127.0.0.1 - - [11/Aug/2026 14:51:50] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-11 14:51:54,232- INFO-127.0.0.1 - - [11/Aug/2026 14:51:54] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-11 14:53:00,408- INFO-text extracted from resume
+2026-08-11 14:53:00,410- INFO-text Cleaned
+2026-08-11 14:53:03,286- INFO-text extracted from resume
+2026-08-11 14:53:03,287- INFO-text Cleaned
+2026-08-11 14:53:04,720- INFO-Extracted Skills from the Resume
+2026-08-11 14:53:04,762- INFO-text Cleaned from description text
+2026-08-11 14:53:08,039- INFO-Skill Extracted from the description file or text
+2026-08-11 14:53:08,041- INFO-Extracted Skills from the Resume
+2026-08-11 14:53:08,042- INFO-AFC is enabled with max remote calls: 10.
+2026-08-11 14:53:08,044- INFO-text Cleaned from description text
+2026-08-11 14:53:10,368- INFO-Skill Extracted from the description file or text
+2026-08-11 14:53:10,371- INFO-AFC is enabled with max remote calls: 10.
+2026-08-11 14:53:12,665- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-11 14:53:12,671- INFO-AI Recommendations Got!!!
+2026-08-11 14:53:12,676- INFO-===================All Required Text Extracted and found===================
+2026-08-11 14:53:12,679- INFO-127.0.0.1 - - [11/Aug/2026 14:53:12] "POST /upload HTTP/1.1" 200 -
+2026-08-11 14:53:28,475- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-11 14:53:28,495- INFO-AI Recommendations Got!!!
+2026-08-11 14:53:28,500- INFO-===================All Required Text Extracted and found===================
+2026-08-11 14:53:28,512- INFO-127.0.0.1 - - [11/Aug/2026 14:53:28] "POST /upload HTTP/1.1" 200 -
