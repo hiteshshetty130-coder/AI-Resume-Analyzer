@@ -29,6 +29,31 @@ def aiRecom(missing_skills):
         return response
     except Exception as e:
         logging.error(f"Unexpected Error->{e}")
+
+def resume_skills_fn(resume_text):
+    try:
+        prompt2=f"""You are an expert resume parser.
+
+        Extract only the technical skills from the resume below.
+
+        Return ONLY valid JSON in this format:
+
+        {{
+          "skills": ["Python", "Flask", "MySQL", "Docker"]
+        }}
+
+        Resume:
+        {resume_text}"""
+        response2=client.models.generate_content(model="gemini-3.1-flash-lite",contents=prompt2)
+        return response2.text
+
+
+
+    except Exception as e:
+        logging.error(f"runtime error--{e}")
+        
+
+
     
 
 

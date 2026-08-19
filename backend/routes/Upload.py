@@ -6,8 +6,9 @@ from docx import Document
 import pandas as pd
 import re
 from google import genai
-from routes.ai import aiRecom 
+from routes.ai import aiRecom , resume_skills_fn
 import logging
+import json
 
 
 bcrypt = Bcrypt()
@@ -83,7 +84,11 @@ def upload():
     cleaned_text = text_clean(text)
     logging.info("text Cleaned")
 
-    resume_skills = skills_extraction(cleaned_text, skills)
+    
+    resume_skill=resume_skills_fn(cleaned_text)
+    resume_skill=json.loads(resume_skill)
+    resume_skills=resume_skill["skills"]
+    print(resume_skills)
     logging.info("Extracted Skills from the Resume")
 
     # If JD file is uploaded, use it

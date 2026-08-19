@@ -43,3 +43,315 @@
 2026-08-11 14:53:28,495- INFO-AI Recommendations Got!!!
 2026-08-11 14:53:28,500- INFO-===================All Required Text Extracted and found===================
 2026-08-11 14:53:28,512- INFO-127.0.0.1 - - [11/Aug/2026 14:53:28] "POST /upload HTTP/1.1" 200 -
+2026-08-19 16:04:32,013- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.7:5000
+2026-08-19 16:04:32,014- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 16:04:32,023- INFO- * Restarting with stat
+2026-08-19 16:05:08,429- WARNING- * Debugger is active!
+2026-08-19 16:05:08,528- INFO- * Debugger PIN: 227-290-503
+2026-08-19 16:05:59,440- INFO-text extracted from resume
+2026-08-19 16:05:59,441- INFO-text Cleaned
+2026-08-19 16:06:04,051- ERROR-runtime error
+2026-08-19 16:06:04,053- INFO-Extracted Skills from the Resume
+2026-08-19 16:06:04,053- INFO-text Cleaned from description text
+2026-08-19 16:06:05,721- INFO-Skill Extracted from the description file or text
+2026-08-19 16:06:05,721- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 16:06:12,561- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 16:06:12,571- INFO-AI Recommendations Got!!!
+2026-08-19 16:06:12,573- INFO-===================All Required Text Extracted and found===================
+2026-08-19 16:06:12,575- INFO-127.0.0.1 - - [19/Aug/2026 16:06:12] "POST /upload HTTP/1.1" 200 -
+2026-08-19 16:06:53,540- INFO- * Detected change in 'C:\\projects\\resume-analyzer\\backend\\routes\\ai.py', reloading
+2026-08-19 16:06:54,727- INFO- * Restarting with stat
+2026-08-19 16:07:22,059- WARNING- * Debugger is active!
+2026-08-19 16:07:22,081- INFO- * Debugger PIN: 227-290-503
+2026-08-19 16:07:22,492- INFO-text extracted from resume
+2026-08-19 16:07:22,492- INFO-text Cleaned
+2026-08-19 16:07:26,149- ERROR-runtime error
+2026-08-19 16:07:26,167- INFO-Extracted Skills from the Resume
+2026-08-19 16:07:26,167- INFO-text Cleaned from description text
+2026-08-19 16:07:28,275- INFO-Skill Extracted from the description file or text
+2026-08-19 16:07:28,275- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 16:07:36,728- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 16:07:36,730- INFO-AI Recommendations Got!!!
+2026-08-19 16:07:36,730- INFO-===================All Required Text Extracted and found===================
+2026-08-19 16:07:36,731- INFO-127.0.0.1 - - [19/Aug/2026 16:07:36] "POST /upload HTTP/1.1" 200 -
+2026-08-19 16:07:51,491- INFO- * Detected change in 'C:\\projects\\resume-analyzer\\backend\\routes\\ai.py', reloading
+2026-08-19 16:07:52,273- INFO- * Restarting with stat
+2026-08-19 16:08:12,811- WARNING- * Debugger is active!
+2026-08-19 16:08:12,831- INFO- * Debugger PIN: 227-290-503
+2026-08-19 16:08:15,167- INFO-text extracted from resume
+2026-08-19 16:08:15,167- INFO-text Cleaned
+2026-08-19 16:08:17,871- ERROR-runtime error
+2026-08-19 16:08:17,879- INFO-Extracted Skills from the Resume
+2026-08-19 16:08:17,879- INFO-text Cleaned from description text
+2026-08-19 16:08:19,430- INFO-Skill Extracted from the description file or text
+2026-08-19 16:08:19,430- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 16:08:27,844- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 16:08:27,847- INFO-AI Recommendations Got!!!
+2026-08-19 16:08:27,847- INFO-===================All Required Text Extracted and found===================
+2026-08-19 16:08:27,850- INFO-127.0.0.1 - - [19/Aug/2026 16:08:27] "POST /upload HTTP/1.1" 200 -
+2026-08-19 16:09:27,849- INFO- * Detected change in 'C:\\projects\\resume-analyzer\\backend\\routes\\ai.py', reloading
+2026-08-19 16:09:28,827- INFO- * Restarting with stat
+2026-08-19 16:09:41,390- WARNING- * Debugger is active!
+2026-08-19 16:09:41,404- INFO- * Debugger PIN: 227-290-503
+2026-08-19 16:10:01,537- INFO- * Detected change in 'C:\\projects\\resume-analyzer\\backend\\routes\\ai.py', reloading
+2026-08-19 16:10:02,505- INFO- * Restarting with stat
+2026-08-19 16:12:31,002- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.20.7:5000
+2026-08-19 16:12:31,003- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 16:12:31,007- INFO- * Restarting with stat
+2026-08-19 16:12:44,072- WARNING- * Debugger is active!
+2026-08-19 16:12:44,090- INFO- * Debugger PIN: 227-290-503
+2026-08-19 16:14:02,338- INFO-text extracted from resume
+2026-08-19 16:14:02,338- INFO-text Cleaned
+2026-08-19 16:14:04,048- ERROR-runtime error
+2026-08-19 16:14:04,048- INFO-Extracted Skills from the Resume
+2026-08-19 16:14:04,048- INFO-text Cleaned from description text
+2026-08-19 16:14:05,138- INFO-Skill Extracted from the description file or text
+2026-08-19 16:14:05,139- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 16:14:06,749- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 16:14:06,751- INFO-AI Recommendations Got!!!
+2026-08-19 16:14:06,751- INFO-===================All Required Text Extracted and found===================
+2026-08-19 16:14:06,752- INFO-127.0.0.1 - - [19/Aug/2026 16:14:06] "POST /upload HTTP/1.1" 200 -
+2026-08-19 16:14:47,599- INFO- * Detected change in 'C:\\projects\\resume-analyzer\\backend\\routes\\ai.py', reloading
+2026-08-19 16:15:11,807- INFO- * Restarting with stat
+2026-08-19 11:14:53,443- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-19 11:14:53,446- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 11:14:53,492- INFO- * Restarting with stat
+2026-08-19 11:16:16,664- WARNING- * Debugger is active!
+2026-08-19 11:16:16,668- INFO- * Debugger PIN: 115-385-531
+2026-08-19 11:16:34,498- INFO-127.0.0.1 - - [19/Aug/2026 11:16:34] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-19 11:16:35,670- INFO-127.0.0.1 - - [19/Aug/2026 11:16:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-19 11:19:51,353- INFO-text extracted from resume
+2026-08-19 11:19:51,355- INFO-text Cleaned
+2026-08-19 11:19:53,206- ERROR-runtime error
+2026-08-19 11:19:53,208- INFO-Extracted Skills from the Resume
+2026-08-19 11:19:53,214- INFO-text Cleaned from description text
+2026-08-19 11:19:54,088- INFO-Skill Extracted from the description file or text
+2026-08-19 11:19:54,090- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:19:57,301- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:19:57,316- INFO-AI Recommendations Got!!!
+2026-08-19 11:19:57,322- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:19:57,325- INFO-127.0.0.1 - - [19/Aug/2026 11:19:57] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:20:48,000- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/ai.py', reloading
+2026-08-19 11:20:48,849- INFO- * Restarting with stat
+2026-08-19 11:22:02,957- WARNING- * Debugger is active!
+2026-08-19 11:22:02,961- INFO- * Debugger PIN: 115-385-531
+2026-08-19 11:22:26,730- INFO-text extracted from resume
+2026-08-19 11:22:26,735- INFO-text Cleaned
+2026-08-19 11:22:30,049- ERROR-runtime error
+2026-08-19 11:22:30,057- INFO-Extracted Skills from the Resume
+2026-08-19 11:22:30,065- INFO-text Cleaned from description text
+2026-08-19 11:22:32,038- INFO-Skill Extracted from the description file or text
+2026-08-19 11:22:32,045- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:22:42,062- ERROR-Unexpected Error->[Errno -3] Temporary failure in name resolution
+2026-08-19 11:22:42,382- INFO-127.0.0.1 - - [19/Aug/2026 11:22:42] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2026-08-19 11:24:00,717- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/ai.py', reloading
+2026-08-19 11:24:03,472- INFO- * Restarting with stat
+2026-08-19 11:25:31,158- WARNING- * Debugger is active!
+2026-08-19 11:25:31,164- INFO- * Debugger PIN: 115-385-531
+2026-08-19 11:25:46,960- INFO-text extracted from resume
+2026-08-19 11:25:46,997- INFO-text extracted from resume
+2026-08-19 11:25:47,002- INFO-text Cleaned
+2026-08-19 11:25:46,998- INFO-text extracted from resume
+2026-08-19 11:25:46,999- INFO-text extracted from resume
+2026-08-19 11:25:46,997- INFO-text Cleaned
+2026-08-19 11:25:47,029- INFO-text Cleaned
+2026-08-19 11:25:47,061- INFO-text Cleaned
+2026-08-19 11:25:54,547- ERROR-runtime error--Invalid format specifier ' [
+        "Python",
+        "Flask",
+        "React",
+        "MySQL",
+        "Docker",
+        "Git"
+        ]
+        ' for object of type 'str'
+2026-08-19 11:25:54,590- INFO-Extracted Skills from the Resume
+2026-08-19 11:25:54,600- INFO-text Cleaned from description text
+2026-08-19 11:25:55,387- ERROR-runtime error--Invalid format specifier ' [
+        "Python",
+        "Flask",
+        "React",
+        "MySQL",
+        "Docker",
+        "Git"
+        ]
+        ' for object of type 'str'
+2026-08-19 11:25:55,437- INFO-Extracted Skills from the Resume
+2026-08-19 11:25:55,453- INFO-text Cleaned from description text
+2026-08-19 11:25:55,545- ERROR-runtime error--Invalid format specifier ' [
+        "Python",
+        "Flask",
+        "React",
+        "MySQL",
+        "Docker",
+        "Git"
+        ]
+        ' for object of type 'str'
+2026-08-19 11:25:55,577- INFO-Extracted Skills from the Resume
+2026-08-19 11:25:55,591- INFO-text Cleaned from description text
+2026-08-19 11:25:56,523- ERROR-runtime error--Invalid format specifier ' [
+        "Python",
+        "Flask",
+        "React",
+        "MySQL",
+        "Docker",
+        "Git"
+        ]
+        ' for object of type 'str'
+2026-08-19 11:25:56,549- INFO-Extracted Skills from the Resume
+2026-08-19 11:25:56,572- INFO-text Cleaned from description text
+2026-08-19 11:25:59,203- INFO-Skill Extracted from the description file or text
+2026-08-19 11:25:59,229- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:25:59,335- INFO-Skill Extracted from the description file or text
+2026-08-19 11:25:59,376- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:25:59,550- INFO-Skill Extracted from the description file or text
+2026-08-19 11:25:59,584- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:26:00,096- INFO-Skill Extracted from the description file or text
+2026-08-19 11:26:00,114- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:26:01,030- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:26:01,033- INFO-AI Recommendations Got!!!
+2026-08-19 11:26:01,035- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:26:01,038- INFO-127.0.0.1 - - [19/Aug/2026 11:26:01] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:26:01,780- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:26:01,784- INFO-AI Recommendations Got!!!
+2026-08-19 11:26:01,786- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:26:01,789- INFO-127.0.0.1 - - [19/Aug/2026 11:26:01] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:26:03,624- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:26:03,629- INFO-AI Recommendations Got!!!
+2026-08-19 11:26:03,633- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:26:03,636- INFO-127.0.0.1 - - [19/Aug/2026 11:26:03] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:26:10,731- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:26:10,735- INFO-AI Recommendations Got!!!
+2026-08-19 11:26:10,737- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:26:10,740- INFO-127.0.0.1 - - [19/Aug/2026 11:26:10] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:27:50,392- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/ai.py', reloading
+2026-08-19 11:27:52,102- INFO- * Restarting with stat
+2026-08-19 11:28:54,716- WARNING- * Debugger is active!
+2026-08-19 11:28:54,717- INFO- * Debugger PIN: 115-385-531
+2026-08-19 11:29:06,215- INFO-text extracted from resume
+2026-08-19 11:29:06,217- INFO-text Cleaned
+2026-08-19 11:29:07,906- ERROR-runtime error--Invalid format specifier ' ["Python", "Flask", "MySQL", "Docker"]
+        ' for object of type 'str'
+2026-08-19 11:29:07,907- INFO-Extracted Skills from the Resume
+2026-08-19 11:29:07,910- INFO-text Cleaned from description text
+2026-08-19 11:29:08,960- INFO-Skill Extracted from the description file or text
+2026-08-19 11:29:08,962- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:29:26,271- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:29:26,275- INFO-AI Recommendations Got!!!
+2026-08-19 11:29:26,276- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:29:26,279- INFO-127.0.0.1 - - [19/Aug/2026 11:29:26] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:30:44,174- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-19 11:30:44,175- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 11:30:44,198- INFO- * Restarting with stat
+2026-08-19 11:31:54,337- WARNING- * Debugger is active!
+2026-08-19 11:31:54,343- INFO- * Debugger PIN: 115-385-531
+2026-08-19 11:32:12,370- INFO-127.0.0.1 - - [19/Aug/2026 11:32:12] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-19 11:33:51,245- INFO-text extracted from resume
+2026-08-19 11:33:51,247- INFO-text Cleaned
+2026-08-19 11:33:52,864- ERROR-runtime error--Invalid format specifier ' ["Python", "Flask", "MySQL", "Docker"]
+        ' for object of type 'str'
+2026-08-19 11:33:52,867- INFO-Extracted Skills from the Resume
+2026-08-19 11:33:52,870- INFO-text Cleaned from description text
+2026-08-19 11:33:53,876- INFO-Skill Extracted from the description file or text
+2026-08-19 11:33:53,878- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 11:34:29,903- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 11:34:29,909- INFO-AI Recommendations Got!!!
+2026-08-19 11:34:29,913- INFO-===================All Required Text Extracted and found===================
+2026-08-19 11:34:29,916- INFO-127.0.0.1 - - [19/Aug/2026 11:34:29] "POST /upload HTTP/1.1" 200 -
+2026-08-19 11:43:11,830- INFO-127.0.0.1 - - [19/Aug/2026 11:43:11] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-19 14:35:10,685- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-19 14:35:10,690- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 14:35:10,770- INFO- * Restarting with stat
+2026-08-19 14:36:27,319- WARNING- * Debugger is active!
+2026-08-19 14:36:27,326- INFO- * Debugger PIN: 677-298-249
+2026-08-19 14:36:42,917- INFO-127.0.0.1 - - [19/Aug/2026 14:36:42] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-19 14:36:43,442- INFO-127.0.0.1 - - [19/Aug/2026 14:36:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-19 14:37:40,642- INFO-text extracted from resume
+2026-08-19 14:37:40,650- INFO-text Cleaned
+2026-08-19 14:37:45,649- ERROR-runtime error--Invalid format specifier ' ["Python", "Flask", "MySQL", "Docker"]
+        ' for object of type 'str'
+2026-08-19 14:37:45,681- INFO-Extracted Skills from the Resume
+2026-08-19 14:37:45,710- INFO-text Cleaned from description text
+2026-08-19 14:37:48,319- INFO-Skill Extracted from the description file or text
+2026-08-19 14:37:48,322- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:37:56,795- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:37:56,811- INFO-AI Recommendations Got!!!
+2026-08-19 14:37:56,817- INFO-===================All Required Text Extracted and found===================
+2026-08-19 14:37:56,831- INFO-127.0.0.1 - - [19/Aug/2026 14:37:56] "POST /upload HTTP/1.1" 200 -
+2026-08-19 14:38:13,377- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/ai.py', reloading
+2026-08-19 14:38:14,826- INFO- * Restarting with stat
+2026-08-19 14:38:59,804- WARNING- * Debugger is active!
+2026-08-19 14:38:59,806- INFO- * Debugger PIN: 677-298-249
+2026-08-19 14:39:12,480- INFO-text extracted from resume
+2026-08-19 14:39:12,480- INFO-text extracted from resume
+2026-08-19 14:39:12,485- INFO-text Cleaned
+2026-08-19 14:39:12,496- INFO-text Cleaned
+2026-08-19 14:39:16,858- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:39:16,858- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:39:19,410- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:39:19,415- INFO-Extracted Skills from the Resume
+2026-08-19 14:39:19,421- INFO-text Cleaned from description text
+2026-08-19 14:39:21,780- INFO-Skill Extracted from the description file or text
+2026-08-19 14:39:21,784- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:39:23,660- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:39:23,667- INFO-AI Recommendations Got!!!
+2026-08-19 14:39:23,675- INFO-===================All Required Text Extracted and found===================
+2026-08-19 14:39:23,689- INFO-127.0.0.1 - - [19/Aug/2026 14:39:23] "POST /upload HTTP/1.1" 200 -
+2026-08-19 14:39:31,093- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:39:31,098- INFO-Extracted Skills from the Resume
+2026-08-19 14:39:31,101- INFO-text Cleaned from description text
+2026-08-19 14:39:33,503- INFO-Skill Extracted from the description file or text
+2026-08-19 14:39:33,509- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:39:34,727- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:39:34,731- INFO-AI Recommendations Got!!!
+2026-08-19 14:39:34,733- INFO-===================All Required Text Extracted and found===================
+2026-08-19 14:39:34,737- INFO-127.0.0.1 - - [19/Aug/2026 14:39:34] "POST /upload HTTP/1.1" 200 -
+2026-08-19 14:40:39,552- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/ai.py', reloading
+2026-08-19 14:40:41,587- INFO- * Restarting with stat
+2026-08-19 14:41:39,277- WARNING- * Debugger is active!
+2026-08-19 14:41:39,279- INFO- * Debugger PIN: 677-298-249
+2026-08-19 14:43:21,749- INFO- * Detected change in '/mnt/c/projects/resume-analyzer/backend/routes/Upload.py', reloading
+2026-08-19 14:43:23,402- INFO- * Restarting with stat
+2026-08-19 14:45:14,950- WARNING- * Debugger is active!
+2026-08-19 14:45:14,957- INFO- * Debugger PIN: 677-298-249
+2026-08-19 14:45:30,087- INFO-text extracted from resume
+2026-08-19 14:45:30,090- INFO-text Cleaned
+2026-08-19 14:45:30,098- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:45:35,137- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:45:35,685- INFO-127.0.0.1 - - [19/Aug/2026 14:45:35] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2026-08-19 14:48:06,066- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-19 14:48:06,069- INFO-[33mPress CTRL+C to quit[0m
+2026-08-19 14:48:06,136- INFO- * Restarting with stat
+2026-08-19 14:48:54,437- WARNING- * Debugger is active!
+2026-08-19 14:48:54,443- INFO- * Debugger PIN: 677-298-249
+2026-08-19 14:49:09,361- INFO-127.0.0.1 - - [19/Aug/2026 14:49:09] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-19 14:49:09,763- INFO-text extracted from resume
+2026-08-19 14:49:09,766- INFO-text Cleaned
+2026-08-19 14:49:09,768- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:49:13,917- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:49:13,925- INFO-Extracted Skills from the Resume
+2026-08-19 14:49:13,927- INFO-text Cleaned from description text
+2026-08-19 14:49:16,151- INFO-Skill Extracted from the description file or text
+2026-08-19 14:49:16,154- INFO-AFC is enabled with max remote calls: 10.
+2026-08-19 14:49:19,632- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-19 14:49:19,636- INFO-AI Recommendations Got!!!
+2026-08-19 14:49:19,638- INFO-===================All Required Text Extracted and found===================
+2026-08-19 14:49:19,641- INFO-127.0.0.1 - - [19/Aug/2026 14:49:19] "POST /upload HTTP/1.1" 200 -
