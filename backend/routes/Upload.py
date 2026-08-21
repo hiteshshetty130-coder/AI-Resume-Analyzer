@@ -6,7 +6,7 @@ from docx import Document
 import pandas as pd
 import re
 from google import genai
-from routes.ai import aiRecom , resume_skills_fn
+from routes.ai import aiRecom , resume_skills_fn,description_skills_fn
 import logging
 import json
 
@@ -88,7 +88,7 @@ def upload():
     resume_skill=resume_skills_fn(cleaned_text)
     resume_skill=json.loads(resume_skill)
     resume_skills=resume_skill["skills"]
-    print(resume_skills)
+    
     logging.info("Extracted Skills from the Resume")
 
     # If JD file is uploaded, use it
@@ -110,7 +110,9 @@ def upload():
         logging.info("text Cleaned from description text")
 
 
-    description_skills = skills_extraction(description_cleaned, skills)
+    description_skill = description_skills_fn(description_cleaned)
+    description_skill=json.loads(description_skill)
+    description_skills=description_skill["skills"]
     logging.info("Skill Extracted from the description file or text")
 
     missing_skills = list(set(description_skills) - set(resume_skills))
@@ -123,6 +125,9 @@ def upload():
     #ai-Recommendation file
     main_skills=aiRecom(missing_skills)
     recom=[line.strip() for line in main_skills.text.split("\n") if line.strip()]
+
+
+    
     logging.info("===================All Required Text Extracted and found===================")
     return jsonify({
         "main_skills":recom,

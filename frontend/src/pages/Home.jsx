@@ -5,21 +5,12 @@ import LandingFooter from '../components/LandingFooter'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
-  const navigate=useNavigate();
-  const handlenav=()=>{
-    const user=localStorage.getItem("userEmail");
-    if (user){
-      navigate("/upload");
-    }
-    else{
-      navigate("/login")
-    }
-  };
+  
 
   return (
     <>
-      <Navbar handlenav={handlenav}/>
-      <Hero handlenav={handlenav}/>
+      <Navbar />
+      <Hero />
       <Features/>
       <LandingFooter/>
     </>

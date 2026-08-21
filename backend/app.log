@@ -355,3 +355,51 @@
 2026-08-19 14:49:19,636- INFO-AI Recommendations Got!!!
 2026-08-19 14:49:19,638- INFO-===================All Required Text Extracted and found===================
 2026-08-19 14:49:19,641- INFO-127.0.0.1 - - [19/Aug/2026 14:49:19] "POST /upload HTTP/1.1" 200 -
+2026-08-20 15:04:54,665- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-20 15:04:54,667- INFO-[33mPress CTRL+C to quit[0m
+2026-08-20 15:04:54,731- INFO- * Restarting with stat
+2026-08-20 15:06:31,690- WARNING- * Debugger is active!
+2026-08-20 15:06:31,694- INFO- * Debugger PIN: 527-875-431
+2026-08-20 15:06:49,963- INFO-127.0.0.1 - - [20/Aug/2026 15:06:49] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-20 15:07:06,112- INFO-127.0.0.1 - - [20/Aug/2026 15:07:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-20 15:08:09,088- INFO-text extracted from resume
+2026-08-20 15:08:09,091- INFO-text Cleaned
+2026-08-20 15:08:09,094- INFO-AFC is enabled with max remote calls: 10.
+2026-08-20 15:08:19,727- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-20 15:08:19,740- INFO-Extracted Skills from the Resume
+2026-08-20 15:08:19,743- INFO-text Cleaned from description text
+2026-08-20 15:08:19,747- INFO-AFC is enabled with max remote calls: 10.
+2026-08-20 15:08:21,139- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-20 15:08:21,149- INFO-Skill Extracted from the description file or text
+2026-08-20 15:08:21,154- INFO-AFC is enabled with max remote calls: 10.
+2026-08-20 15:08:22,995- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-20 15:08:23,103- INFO-AI Recommendations Got!!!
+2026-08-20 15:08:23,106- INFO-===================All Required Text Extracted and found===================
+2026-08-20 15:08:23,111- INFO-127.0.0.1 - - [20/Aug/2026 15:08:23] "POST /upload HTTP/1.1" 200 -
+2026-08-21 07:12:44,793- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.38.228:5000
+2026-08-21 07:12:44,795- INFO-[33mPress CTRL+C to quit[0m
+2026-08-21 07:12:44,829- INFO- * Restarting with stat
+2026-08-21 07:13:58,511- WARNING- * Debugger is active!
+2026-08-21 07:13:58,517- INFO- * Debugger PIN: 268-997-855
+2026-08-21 07:15:41,003- INFO-127.0.0.1 - - [21/Aug/2026 07:15:41] "[33mGET / HTTP/1.1[0m" 404 -
+2026-08-21 07:15:41,250- INFO-127.0.0.1 - - [21/Aug/2026 07:15:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-08-21 07:16:14,906- INFO-text extracted from resume
+2026-08-21 07:16:14,908- INFO-text Cleaned
+2026-08-21 07:16:14,911- INFO-AFC is enabled with max remote calls: 10.
+2026-08-21 07:16:20,360- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-21 07:16:20,380- INFO-Extracted Skills from the Resume
+2026-08-21 07:16:20,388- INFO-text Cleaned from description text
+2026-08-21 07:16:20,397- INFO-AFC is enabled with max remote calls: 10.
+2026-08-21 07:16:21,610- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-21 07:16:21,634- INFO-Skill Extracted from the description file or text
+2026-08-21 07:16:21,645- INFO-AFC is enabled with max remote calls: 10.
+2026-08-21 07:16:23,227- INFO-HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent "HTTP/1.1 200 OK"
+2026-08-21 07:16:23,233- INFO-AI Recommendations Got!!!
+2026-08-21 07:16:23,239- INFO-===================All Required Text Extracted and found===================
+2026-08-21 07:16:23,248- INFO-127.0.0.1 - - [21/Aug/2026 07:16:23] "POST /upload HTTP/1.1" 200 -

@@ -51,6 +51,29 @@ def resume_skills_fn(resume_text):
 
     except Exception as e:
         logging.error(f"runtime error--{e}")
+
+
+def description_skills_fn(jd):
+    try:
+        prompt2=f"""You are an expert resume parser.
+
+        Extract only the technical skills from the JD TEXT below.
+
+        Return ONLY valid JSON in this format:
+
+        {{
+          "skills": ["Python", "Flask", "MySQL", "Docker"]
+        }}
+
+        Resume:
+        {jd}"""
+        response3=client.models.generate_content(model="gemini-3.1-flash-lite",contents=prompt2)
+        return response3.text
+
+
+
+    except Exception as e:
+        logging.error(f"runtime error--{e}")
         
 
 

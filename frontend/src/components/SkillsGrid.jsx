@@ -2,43 +2,6 @@ import React from "react";
 
 
 function SkillsGrid({result}) {
-  const resumeSkills = [
-    "Python",
-    "Flask",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "SQL",
-    "Git",
-    "GitHub",
-    "Pandas",
-    "NumPy",
-    "Power BI",
-    "SQLite",
-    "C",
-    "Data Visualization",
-    "Leadership",
-    "Web Design",
-    "Event Coordination",
-    "Problem Solving",
-    "Communication",
-  ];
-
-  const jdSkills = [
-    "Python",
-    "Flask",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "SQL",
-    "React",
-  ];
-
-  const matchedSkills = ["Python", "Flask", "HTML", "CSS", "JavaScript", "SQL"];
-
-  const missingSkills = ["React"];
-  
-
   return (
     <div className="skills-grid">
       {/* Resume Skills */}
@@ -90,8 +53,9 @@ function SkillsGrid({result}) {
             </span>
           ))}
         </div>
-        <div className="matched-tip">
-          ✅ Great! You have most of the required skills.
+        
+        <div className={result.percentage>70 ? "matched-tip": "matched-tip-red"}>
+          {result.percentage>70 ? "✅ Great! You have most of the required skills.": "Update your skills most of the required skills are missing !!!"}
         </div>
       </div>
 
@@ -110,9 +74,9 @@ function SkillsGrid({result}) {
             </span>
           ))}
         </div>
-        <div className="missing-tip">
-          💡 Learning these skills will boost your profile and increase your
-          chances.
+        
+        <div className={result.percentage<100?"missing-tip":"missing-tip-green"}>
+          {result.percentage<100?"💡 Learning these skills will boost your profile and increase your chances.": "Congratulations All the skills have matched."}
         </div>
       </div>
     </div>

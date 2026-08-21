@@ -4,13 +4,14 @@ function ScoreCard({result}) {
   return (
     <div className="score-card">
       <div className="score-left">
-        <div className="circle-score">
+        
+        <div className={result.percentage>70?"circle-score":"circle-score-red"}>
           <span>{result.percentage}</span>
           <p>Match Score</p>
         </div>
 
-        <div className="score-text">
-          <h3>🎉 Great Match!</h3>
+        <div className={result.percentage>70?"score-text":"score-text-red"}>
+          {result.percentage >70 ?<h3>🎉 Great Match!</h3>:<h3>Improve You have lot of missing skills </h3>}
           <p>You have matched {result.matched_skills.length} out of {result.description_skills.length} required skills.</p>
         </div>
       </div>

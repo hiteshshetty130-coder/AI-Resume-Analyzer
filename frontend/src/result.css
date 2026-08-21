@@ -92,12 +92,44 @@
   margin-top: 2px;
 }
 
+.circle-score-red {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid #ef4444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.circle-score-red span {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.circle-score-red p {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+
 .score-text h3 {
   font-size: 20px;
   font-weight: 700;
   color: #16a34a;
   margin-bottom: 8px;
 }
+.score-text-red h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color:  #ef4444;
+  margin-bottom: 8px;
+}
+
 
 .score-text p {
   font-size: 14px;
@@ -210,11 +242,30 @@
   padding: 12px;
   border-radius: 8px;
 }
+.matched-tip-red {
+  margin-top: 16px;
+  background: #fef2f2;
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+}
+
 
 .missing-tip {
   margin-top: 16px;
   background: #fef2f2;
   color: #ef4444;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+}
+.missing-tip-green {
+  margin-top: 16px;
+  background: #f0fdf4;
+  color: #16a34a;
   font-size: 13px;
   font-weight: 500;
   padding: 12px;

@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 
-function Hero({handlenav}) {    
+function Hero() {  
+  const navigate=useNavigate();
+  const handlenav=()=>{
+    const user=localStorage.getItem("userEmail");
+    if (user){
+      navigate("/upload");
+    }
+    else{
+      navigate("/login")
+    }
+  };  
   return (
     <section className="hero-section">
       <div className="left-section">

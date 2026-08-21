@@ -34,10 +34,6 @@ function AiRecommendations({ result }) {
           />
         </div>
       </div>
-
-      <div className="download-wrap">
-        <button className="download-btn">⬇️ Download Report PDF</button>
-      </div>
     </div>
   );
 }
