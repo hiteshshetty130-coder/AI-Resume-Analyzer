@@ -17,7 +17,7 @@ from routes.Upload import upload_app
 
 
 app.register_blueprint(register_app)
-app.register_blueprint(login_app)
+app.register_blueprint(login_app,url_prefix="/auth")
 app.register_blueprint(upload_app)
 
 
