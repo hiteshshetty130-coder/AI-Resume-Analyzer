@@ -49,8 +49,8 @@ function Logincomponent() {
 
   //Function that handles login using username and password and handles all the edges cases
   const handleLogin = async (e) => {
-
     e.preventDefault();
+    
     if (!name || !password) {
       setError("Please Fill all the Details");
       return;
@@ -66,7 +66,7 @@ function Logincomponent() {
     });
 
     const data = await response.json();
-    
+
     if (!response.ok) {
       setError(data.message);
     } else {

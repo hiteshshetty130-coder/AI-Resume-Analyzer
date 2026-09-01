@@ -4,7 +4,7 @@ from flask_bcrypt import Bcrypt
 from database.database import *
 import logging
 
-
+#Root page which designs the project into modules using Blueprint 
 app=Flask(__name__)
 CORS(app)
 bcrypt=Bcrypt(app)
@@ -15,12 +15,10 @@ from routes.Register import register_app
 from routes.login import login_app
 from routes.Upload import upload_app
 
-
+#Blueprint of the projects 
 app.register_blueprint(register_app)
 app.register_blueprint(login_app,url_prefix="/auth")
 app.register_blueprint(upload_app)
-
-
 
 
 if __name__=="__main__":
