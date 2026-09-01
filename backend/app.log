@@ -586,3 +586,21 @@
 2026-08-31 08:34:50,037- INFO-127.0.0.1 - - [31/Aug/2026 08:34:50] "OPTIONS /auth/login HTTP/1.1" 200 -
 2026-08-31 08:34:50,387- INFO-Login Successful
 2026-08-31 08:34:50,391- INFO-127.0.0.1 - - [31/Aug/2026 08:34:50] "POST /auth/login HTTP/1.1" 200 -
+2026-08-31 08:53:22,158- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+2026-08-31 08:53:22,159- INFO-[33mPress CTRL+C to quit[0m
+2026-08-31 08:53:22,163- INFO- * Restarting with stat
+2026-08-31 08:53:27,934- WARNING- * Debugger is active!
+2026-08-31 08:53:27,942- INFO- * Debugger PIN: 903-961-982
+2026-08-31 08:55:27,959- INFO-172.18.0.1 - - [31/Aug/2026 08:55:27] "OPTIONS /auth/google HTTP/1.1" 200 -
+2026-08-31 08:55:28,814- INFO-172.18.0.1 - - [31/Aug/2026 08:55:28] "POST /auth/google HTTP/1.1" 200 -
+2026-08-31 09:15:15,939- INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+2026-08-31 09:15:15,950- INFO-[33mPress CTRL+C to quit[0m
+2026-08-31 09:15:15,958- INFO- * Restarting with stat
+2026-08-31 09:15:33,720- WARNING- * Debugger is active!
+2026-08-31 09:15:33,723- INFO- * Debugger PIN: 853-284-905

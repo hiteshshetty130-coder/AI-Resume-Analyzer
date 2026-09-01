@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import { Link, useNavigate } from "react-router-dom";
 
+//login page ui and code
 function Logincomponent() {
+
+  //function that handles google authentication upon clicking continue with google
   const handleGoogleSuccess = () => {
     google.accounts.id.initialize({
       client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
       callback: async (response) => {
+
         try {
           const res = await fetch("http://localhost:5000/auth/google", {
             method: "POST",
@@ -27,7 +31,9 @@ function Logincomponent() {
             localStorage.setItem("userName", data.name);
             navigate("/upload");
           }
-        } catch (error) {
+        }
+
+        catch (error) {
           console.error("Google Login error:", error);
         }
       },
@@ -35,17 +41,21 @@ function Logincomponent() {
     google.accounts.id.prompt();
   };
 
+
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  //Function that handles login using username and password and handles all the edges cases
   const handleLogin = async (e) => {
+
     e.preventDefault();
     if (!name || !password) {
       setError("Please Fill all the Details");
       return;
     }
+
     const response = await fetch("http://127.0.0.1:5000/auth/login", {
       method: "post",
       headers: { "Content-Type": "application/json" },
@@ -54,8 +64,9 @@ function Logincomponent() {
         password,
       }),
     });
+
     const data = await response.json();
-    console.log(data);
+    
     if (!response.ok) {
       setError(data.message);
     } else {
@@ -65,6 +76,8 @@ function Logincomponent() {
       navigate("/upload");
     }
   };
+
+  //returns the UI of Login page
   return (
     <div className="login-page">
       <div className="login-box">
