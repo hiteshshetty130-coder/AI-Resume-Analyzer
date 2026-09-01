@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 
+//Hero section Ui
 function Hero() {  
   const navigate=useNavigate();
+
+  //function to display the particular page based on authentication
   const handlenav=()=>{
     const user=localStorage.getItem("userEmail");
     if (user){

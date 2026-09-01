@@ -1,7 +1,7 @@
 import React from "react";
 
 function AiRecommendations({ result }) {
-  console.log(result.main_skills);
+// get the rseult of learning recommendations from parent component and displays to user using map
   return (
     <div className="ai-section">
       <div className="ai-header">

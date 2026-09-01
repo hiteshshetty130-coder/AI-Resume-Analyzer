@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+//Ui and code to allow the user to upload the jd through the text or file
 function UploadDescription({
   AnalyzeResume,
   setDescriptionText,
@@ -16,24 +17,23 @@ function UploadDescription({
     setJDFile(e.target.files[0]);
   };
 
-  const[isDragging,setIsDragging]=useState(false);
-  
-  const handleDragover=(e)=>{
+  const [isDragging, setIsDragging] = useState(false);
+
+  const handleDragover = (e) => {
     e.preventDefault();
     setIsDragging(true);
-  }
-  const handleDragLeave=(e)=>{
+  };
+  const handleDragLeave = (e) => {
     setIsDragging(false);
-  }
-  const handleDrop=(e)=>{
+  };
+  const handleDrop = (e) => {
     e.preventDefault();
     setIsDragging(false);
-    const file=e.dataTransfer.files[0];
-    if (file){
+    const file = e.dataTransfer.files[0];
+    if (file) {
       setJDFile(file);
     }
-  }
-
+  };
 
   return (
     <div>
@@ -56,6 +56,7 @@ function UploadDescription({
           </button>
         </div>
 
+        
         {mode === "text" ? (
           <>
             <textarea
@@ -83,7 +84,12 @@ function UploadDescription({
             <i className="fa-solid fa-circle-check success-icon"></i>
           </div>
         ) : (
-          <div className={`jd-upload-box ${isDragging ? "drag-active" : ""}`} onDragOver={handleDragover} onDragLeave={handleDragLeave} onDrop={handleDrop}>
+          <div
+            className={`jd-upload-box ${isDragging ? "drag-active" : ""}`}
+            onDragOver={handleDragover}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDrop}
+          >
             <input
               type="file"
               id="jdFile"

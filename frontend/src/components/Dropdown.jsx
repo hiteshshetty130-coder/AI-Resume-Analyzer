@@ -1,6 +1,7 @@
 import "../dropdown.css";
 import React from "react";
 
+//gets props from parent and displays the logout box with info to users
 function Dropdown({email,onLogout}) {
   const user=localStorage.getItem("userName");
   const initial=user ? user[0].toUpperCase() : "U";

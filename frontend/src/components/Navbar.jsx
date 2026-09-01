@@ -1,6 +1,7 @@
 import React from "react";
 import { Link,useNavigate } from "react-router-dom";
 
+//UI of the NaV Bar in the Landing page 
 function Navbar() {
   const navigate = useNavigate();
   const handlenav = () => {

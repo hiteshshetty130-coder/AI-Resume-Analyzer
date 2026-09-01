@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//Ui to display all the misiing matched skills in the UI
 function SkillsGrid({result}) {
   return (
     <div className="skills-grid">

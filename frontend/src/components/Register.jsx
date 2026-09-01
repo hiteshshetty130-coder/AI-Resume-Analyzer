@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
+
+  //Function to handle register page Google Authentication
   const handleGoogleSuccess2 = () => {
     google.accounts.id.initialize({
       client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
@@ -16,8 +18,8 @@ function Register() {
               credential: response.credential,
             }),
           });
+
           const data = await res.json();
-          console.log("Backend Response", data);
           if (!res.ok) {
             setError(data.message);
           } else {
@@ -26,7 +28,8 @@ function Register() {
             localStorage.setItem("userName", data.name);
             navigate("/upload");
           }
-        } catch (error) {
+        } 
+        catch (error) {
           console.error("Google Login error:", error);
         }
       },
@@ -41,6 +44,7 @@ function Register() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  //Function to send data to backend through api for user enetered registartion
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name || !email || !password || !confirmpassword) {

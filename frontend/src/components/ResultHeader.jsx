@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+//Header section of the final results page
 function ResultHeader() {
   const navigate=useNavigate();
   const handleAnalyzeBtn=()=>{

@@ -1,5 +1,6 @@
 import React from 'react'
 
+//UI of upload page right Info
 function UploadRightContent() {
     return (
         <div>

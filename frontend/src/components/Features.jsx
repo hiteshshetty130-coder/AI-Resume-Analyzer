@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+//Ui of the landing page Features section
 function Features() {
   return (
     <section className="features-section">

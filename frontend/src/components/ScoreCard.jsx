@@ -1,5 +1,6 @@
 import React from "react";
 
+//Scorecard UI of the Results page percentage , total etc etc...
 function ScoreCard({result}) {
   return (
     <div className="score-card">

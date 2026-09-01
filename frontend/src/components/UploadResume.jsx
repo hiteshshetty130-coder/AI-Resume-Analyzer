@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../upload.css";
 
+//Function to display the upload resume UI
 function UploadResume({resumeFile,setResumeFile,icon,iconclass}) {
   const [isDragging,setIsDragging]=useState(false);
   const handleDragOver=(e)=>{
@@ -18,7 +19,6 @@ function UploadResume({resumeFile,setResumeFile,icon,iconclass}) {
       setResumeFile(file);
     }
   }
-
 
   return (
     <div>

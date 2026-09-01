@@ -3,6 +3,8 @@ import {NavLink, useNavigate} from "react-router-dom";
 import Dropdown from "./Dropdown";
 import "../dropdown.css";
 
+
+//Nav Bar of the Upload page Ui
 export default function UploadNavBar() {
   const user=localStorage.getItem("userName");
   const email=localStorage.getItem("userEmail");
@@ -13,7 +15,6 @@ export default function UploadNavBar() {
     localStorage.clear();
     navigate("/login");
   }
-
 
   return (
     <nav className="upload-navbar">
