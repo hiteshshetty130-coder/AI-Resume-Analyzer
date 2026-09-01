@@ -9,8 +9,10 @@ from google.auth.transport import requests
 import os
 
 bcrypt = Bcrypt()
+
 login_app=Blueprint("login",__name__)
 
+#functions and routes that handles the logic for login of a user using a Api request from react 
 @login_app.route("/login",methods=["POST"])
 def login():
     data=request.get_json()
@@ -34,6 +36,8 @@ def login():
     return jsonify({"message":"user found",
                     "name":users[1]}),200
 
+
+#function and routes that handles the google authenticator login procedure using api request from react 
 @login_app.route("/google", methods=["POST"])
 def google_login():
 
