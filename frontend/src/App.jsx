@@ -10,10 +10,9 @@ import ProtectedRoutes from './components/ProtectedRoutes';
 import Result from './pages/Result';
 function App() {
   
-  
+  //Final App/Project rendering with routes defination
   return (
     <>
-     
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About/>}></Route>

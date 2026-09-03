@@ -8,6 +8,7 @@ import AiRecommendations from "../components/AiRecommendations";
 import { useLocation } from "react-router-dom";
 
 
+//Results page components Rendering
 function Result() {
   const location=useLocation();
     const result=location.state?.result

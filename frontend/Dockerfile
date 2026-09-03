@@ -1,3 +1,4 @@
+#Docker File Configurations for Frontend/React
 FROM node:20
 WORKDIR /app
 COPY package*.json ./

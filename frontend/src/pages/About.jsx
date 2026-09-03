@@ -2,8 +2,8 @@ import React from 'react'
 import '../about.css';
 import Navbar from '../components/Navbar';
 
-function About() {
-  
+//UI of the About Page 
+function About() { 
   return (
     <>
   <Navbar/>

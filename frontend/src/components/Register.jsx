@@ -47,7 +47,7 @@ function Register() {
   //Function to send data to backend through api for user enetered registartion
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name || !email || !password || !confirmpassword) {
+    if (!name.trim() || !email.trim() || !password.trim() || !confirmpassword.trim()) {
       setError("Please Fill all the Details");
       return;
     }
@@ -89,7 +89,10 @@ function Register() {
                 placeholder="Enter your full name"
                 autoComplete="username"
                 value={name}
+                maxLength={50}
+                pattern="[A-za-z ]+"
                 onChange={(e) => setName(e.target.value)}
+                
               />
             </div>
           </div>
@@ -116,6 +119,7 @@ function Register() {
                 type="password"
                 placeholder="Enter your password"
                 autoComplete="new-password"
+                maxLength={20}
                 id="passInput"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -131,6 +135,7 @@ function Register() {
                 type="password"
                 placeholder="Confirm your password"
                 autoComplete="new-password"
+                maxLength={20}
                 id="confirmInput"
                 value={confirmpassword}
                 onChange={(e) => setCoPassword(e.target.value)}

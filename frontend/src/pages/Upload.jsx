@@ -8,14 +8,16 @@ import Dropdown from "../components/Dropdown";
 import "../upload.css";
 import { FaFileAlt, FaFilePdf, FaFileWord } from "react-icons/fa";
 
+
+//Upload Page rendering and parent data snedings 
 function Upload() {
   const [resumeFile, setResumeFile] = useState(null);
   const [DescriptionText, setDescriptionText] = useState("");
   const [err, setErr] = useState("");
   const [jdFile, setJDFile] = useState(null);
-  
-  
   const navigate = useNavigate();
+  
+  //clear button function
   const handleClear = () => {
     setResumeFile(null);
     setDescriptionText("");
@@ -40,7 +42,6 @@ function Upload() {
   // description file icon code
   let jdIcon = <FaFilePdf />;
   let jdIconClass = "pdf-icon";
-
   if (dfilename.endsWith(".txt")) {
     jdIcon = <FaFileAlt />;
     jdIconClass = "txt-icon";
@@ -48,7 +49,6 @@ function Upload() {
     jdIcon = <FaFileWord />;
     jdIconClass = "doc-icon";
   }
-
 
   // Resume Analyzing main function with backend validation and API Calling......
   const AnalyzeResume = async () => {
